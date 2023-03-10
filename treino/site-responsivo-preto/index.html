@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>soft landing</title>
+</head>
+<body>
+    <header>
+        <div class="logo">SOFT LANDING</div>
+        <div class="hamburguer" >
+            <div class="line" ></div>
+            <div class="line" ></div>
+            <div class="line" ></div>
+        </div>
+        <nav class="nav-bar">
+            <ul>
+                <li>
+                    <a href="#" class="active" >HOME</a>
+                </li>
+                <li>
+                    <a href="#" >FEATURES</a>
+                </li>
+                <li>
+                    <a href="#" >PRICING</a>
+                </li>
+                <li>
+                    <a href="#" >ABOUT</a>
+                </li>
+                <li>
+                    <a href="#" >CONTACT</a>
+                </li>
+            </ul>
+            
+        </nav>
+
+    </header>
+    <script>
+        hamburguer = document.querySelector(".hamburguer");
+        hamburguer.onclick = function() {
+            navBar = document.querySelector(".nav-bar");
+            navBar.classList.toggle("active")
+        }
+    </script>
+</body>
+</html>
